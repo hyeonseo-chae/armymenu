@@ -1,0 +1,43 @@
+structure (row) {
+  description (__DESCRIPTION__)
+  property(dinr_cal){
+    type(dinr_cal)
+    min(Optional) max(One)
+  }
+   property(lunc){
+    type(lunc)
+    min(Optional) max(One)
+  }
+  property(sum_cal){
+    type(sum_cal)
+    min(Optional) max(One)
+  }
+   property(adspcfd){
+    type(adspcfd)
+    min(Optional) max(One)
+  }
+   property(adspcfd_cal){
+    type(adspcfd_cal)
+    min(Optional) max(One)
+  }
+   property(dates){
+    type(dates)
+    min(Optional) max(One)
+  }
+  property(lunc_cal){
+    type(lunc_cal)
+    min(Optional) max(One)
+  }
+   property(brst){
+    type(brst)
+    min(Optional) max(One)
+  }
+    property(dinr){
+    type(dinr)
+    min(Optional) max(One)
+  }
+   property(brst_cal){
+    type(brst_cal)
+    min(Optional) max(One)
+  }
+}

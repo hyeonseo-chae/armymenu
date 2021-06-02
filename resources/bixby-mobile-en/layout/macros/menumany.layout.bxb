@@ -1,0 +1,33 @@
+
+layout-macro-def (menumany) {
+  
+  params {
+    param (info) {
+      type (results)
+      min (Required) max (Many)
+    }
+  }
+  content {
+    section{
+      title{
+        template ("학식 정보")
+      }
+      
+     content {
+    cell-card {
+      slot2 {
+        content {
+          primary {
+            template ("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+          }
+        }
+      }
+ 
+    }
+  }
+      
+      }
+    
+    }
+
+}

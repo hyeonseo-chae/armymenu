@@ -1,0 +1,5 @@
+action(httpCall) {
+ description (__DESCRIPTION__)
+ type(Constructor)
+ output(results)
+}

@@ -1,0 +1,8 @@
+structure (results) {
+  description (__DESCRIPTION__)
+  property(DS_TB_MNDT_DATEBYMLSVC_7652){
+    type(DS_TB_MNDT_DATEBYMLSVC_7652)
+    min(Optional) max(Many)
+  }
+ 
+}

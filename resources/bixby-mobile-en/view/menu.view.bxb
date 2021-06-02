@@ -1,0 +1,26 @@
+result-view {
+
+  match: results (this)
+
+  message {
+
+        template ("학식 정보를 가져와 보았어요. 아래에서 정보를 확인해 보세요.")
+  }
+
+   render {
+   
+      if(size(this) == 1){
+      layout{
+        layout-macro (menuone){
+          param(info){
+            expression (this)
+          }
+        }
+        
+        
+      }
+   
+    }
+    
+  }
+  }

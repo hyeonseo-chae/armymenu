@@ -1,0 +1,11 @@
+structure (DS_TB_MNDT_DATEBYMLSVC_7652) {
+  description (__DESCRIPTION__)
+  property(list_total_count){
+    type(list_total_count)
+    min(Optional) max(Many)
+  }
+   property(row){
+    type(row)
+min(Optional) max(Many)
+  }
+}
