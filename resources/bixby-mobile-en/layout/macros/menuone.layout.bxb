@@ -1,33 +1,52 @@
-
 layout-macro-def (menuone) {
-  
   params {
     param (info) {
       type (results)
-      min (Required) max (One)
+      min (Required) max (Many)
     }
   }
   content {
-    section{
-      title{
-        template ("학식 정보")
-      }
-      
+    section {
       content {
-    cell-card {
-      slot2 {
-        content {
-          primary {
-            template ("#{value(info)}")
+        // image-card {
+        //   aspect-ratio (4:3)
+        //   image-url ("#{value(flower.imageUrls[0])}")
+        //   title-area {
+        //     halign (Start)
+        //     slot1 {
+        //       text {
+        //         value ("#{value(flower.name)}")
+        //         style (Title_M)
+        //       }
+        //     }
+        //   }
+        // }
+        // paragraph {
+        //   value {
+        //     template ("#{value(flower.priceRange)}")
+        //   }
+        //   style (Detail_L)
+        // }
+        single-line {
+          text {
+            value {
+              template ("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+            }
+            style (Detail_M)
           }
         }
+        divider
+        single-line {
+          text {
+            value ("In Stock")
+            style (Detail_M_Soft)
+          }
+        }
+        
       }
- 
-    }
-  }
       
-      }
-    
     }
-
+    
+  }
+  
 }

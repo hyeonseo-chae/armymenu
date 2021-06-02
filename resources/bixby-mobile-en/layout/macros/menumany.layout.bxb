@@ -1,6 +1,5 @@
 
 layout-macro-def (menumany) {
-  
   params {
     param (info) {
       type (results)
@@ -8,26 +7,23 @@ layout-macro-def (menumany) {
     }
   }
   content {
-    section{
-      title{
-        template ("학식 정보")
-      }
+    section {
+      content {
+  paragraph {
+      style(Detail_M)
+      value("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+    } //https://bixbydevelopers.com/dev/docs/reference/type/compound-card
+    //위 링크 참고하면 레이아웃 구성가능할듯
       
-     content {
-    cell-card {
-      slot2 {
-        content {
-          primary {
-            template ("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+        divider
+        single-line {
+          text {
+            value ("In Stock")
+            style (Detail_M_Soft)
           }
         }
       }
- 
+     
     }
   }
-      
-      }
-    
-    }
-
 }

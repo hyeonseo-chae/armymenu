@@ -4,14 +4,14 @@ result-view {
 
   message {
 
-        template ("학식 정보를 가져와 보았어요. 아래에서 정보를 확인해 보세요.")
+        template ("육군 7652부대 식단정보를 받아왔어요.")
   }
 
    render {
    
       if(size(this) == 1){
       layout{
-        layout-macro (menuone){
+        layout-macro (menumany){
           param(info){
             expression (this)
           }
@@ -24,3 +24,4 @@ result-view {
     
   }
   }
+  
