@@ -1,4 +1,3 @@
-
 layout-macro-def (menumany) {
   params {
     param (info) {
@@ -7,13 +6,36 @@ layout-macro-def (menumany) {
     }
   }
   content {
+//     cell-card {
+//   slot2 {
+    
+//     content {
+//       order(PrimarySecondary)
+//       primary("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.dates)}")
+//       secondary("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+//   }
+
+// }}
+//다양한 방법으로 text가 모두 출력되게 할려고 했으나, 실패....
     section {
+      
       content {
-  paragraph {
-      style(Detail_M)
-      value("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
+        paragraph {
+      style(Title_S)
+      value("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.dates)}")
+    }
+    single-line{
+        text {
+        style(Detail_M)
+        value(조식)
+      }
+      
+    }
+  paragraph("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}") {
+      style(Detail_L)
     } //https://bixbydevelopers.com/dev/docs/reference/type/compound-card
     //위 링크 참고하면 레이아웃 구성가능할듯
+    //마지막 1개가 others로 나옴 이거 수정해야하는디....
       
         divider
         single-line {

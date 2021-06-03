@@ -10,9 +10,11 @@ module.exports.function = function httpCall (){
   //results는 결과값을 담을 리스트
 
   var result = []
-  result = http.getUrl("https://openapi.mnd.go.kr/3331313332343635353437343432313337/json/DS_TB_MNDT_DATEBYMLSVC_7652/1/5/",{format : 'json'})
+  result = http.getUrl("https://openapi.mnd.go.kr/3331313332343635353437343432313337/json/DS_TB_MNDT_DATEBYMLSVC_7652/8/14/",{format : 'json'})
   // 서비스키 : 3331313332343635353437343432313337
   // http url 설명 1) https://openapi.mnd.go.kr/서비스키/xml(데이터형식)/DS_TB_MNDT_DATEBYMLSVC_7652(부대)/1(1페이지)/5(5페이지)/
+  // 7개씩 끊으면 일자 나옴 아마 최신버전에 가장 앞으로 오는것으로 예상이 됨. 이거 api마다 다를것으로 예상이 됨.
+  
   
   // *1* API 호출 시도해 본 방법 1 : 이대로 불러오면 데이터는 불러와지는데, type이 string으로 나와서 데이터에 세부적으로 접근 불가?
   // => 또하나의 가족의 경우에는 api 호출시 데이터 형식 찍어보면 xml이라고 나옴, 그런데 국방식단표 데이터 형식 찍어보니 string형식
