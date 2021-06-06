@@ -2,13 +2,27 @@ capsule {
   id (httpcall.armymenu1)
   version (0.1.0)
   format (3)
+  store-countries{
+    all{
+      except (on)
+    }
+  }
   targets {
     target (bixby-mobile-en-US)
   }
-  runtime-flags {
-    concepts-inherit-super-type-features
-    modern-prompt-rejection
-    support-halt-effect-in-computed-inputs
-    
+  runtime-version (9) {
+    overrides {
+      no-default-init-when-input-already-instantiated (false)
+      allow-empty-fragments-in-dialog-templates (false)
+      no-fallback-dialog-in-views (false)
+      auto-insert-navigation-conversation-drivers (false)
+      use-most-specific-instantiation-strategy (false)
+      no-auto-property-value-merging (false)
+      use-authorization-header-for-remote-endpoint-oauth (false)
+      use-input-views-for-selection-list-detail (false)
+      modern-default-view-behavior (false)
+      no-filtering-with-validation (false)
+      result-view-capsule-lock (false)
+    }
   }
 }

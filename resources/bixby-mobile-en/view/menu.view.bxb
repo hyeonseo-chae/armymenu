@@ -9,9 +9,9 @@ result-view {
 
    render {
    
-      if(size(this) == 1){
-      layout{
-        layout-macro (menumany){
+     if(size(this)==1){
+layout{
+        layout-macro (menuone){
           param(info){
             expression (this)
           }
@@ -19,8 +19,19 @@ result-view {
         
         
       }
+     }else{list-of(this){
+     where-each (item){
+       layout-macro (menumany){
+         param (info){
+           expression (item)
+         }
+       }
+     }
+       
+     }}
+      
    
-    }
+    
     
   }
   }

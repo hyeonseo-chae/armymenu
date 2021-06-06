@@ -27,14 +27,13 @@ layout-macro-def (menuone) {
         //   }
         //   style (Detail_L)
         // }
-        single-line {
-          text {
-            value {
-              template ("#{value(info.DS_TB_MNDT_DATEBYMLSVC_7652.row.brst)}")
-            }
-            style (Detail_M)
-          }
-        }
+        for-each (info.DS_TB_MNDT_DATEBYMLSVC_7652){
+      as(subinfo){
+       paragraph("#{value(subinfo.row.brst)} ") {
+      style(Detail_L)
+    }
+      }
+    }
         divider
         single-line {
           text {

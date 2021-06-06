@@ -19,7 +19,6 @@ module.exports.function = function httpCall (){
   // *1* API 호출 시도해 본 방법 1 : 이대로 불러오면 데이터는 불러와지는데, type이 string으로 나와서 데이터에 세부적으로 접근 불가?
   // => 또하나의 가족의 경우에는 api 호출시 데이터 형식 찍어보면 xml이라고 나옴, 그런데 국방식단표 데이터 형식 찍어보니 string형식
  
- 
     console.log(typeof(result)) 
     return result
   // 이거 stirng 나옴

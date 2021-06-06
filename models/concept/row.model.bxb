@@ -2,42 +2,42 @@ structure (row) {
   description (__DESCRIPTION__)
   property(dinr_cal){
     type(dinr_cal)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(lunc){
     type(lunc)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
   property(sum_cal){
     type(sum_cal)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(adspcfd){
     type(adspcfd)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(adspcfd_cal){
     type(adspcfd_cal)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(dates){
     type(dates)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
   property(lunc_cal){
     type(lunc_cal)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(brst){
     type(brst)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
     property(dinr){
     type(dinr)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
    property(brst_cal){
     type(brst_cal)
-    min(Optional) max(One)
+    min(Optional) max(Many)
   }
 }
